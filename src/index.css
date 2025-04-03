@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Boldonse;
+  src: local("Boldonse-Regular"), url("./assets/fonts/Boldonse-Regular.ttf");
+}
+
+@theme {
+  --font-boldonse: Boldonse, "sans-serif";
+}
+
+:root {
+  background-color: var(--color-slate-800);
+}
