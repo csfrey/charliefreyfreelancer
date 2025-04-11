@@ -30,7 +30,10 @@ const PhotoLinkLandscape = ({ children, bg, to }) => {
 const Home = () => {
   return (
     <>
-      {" "}
+      {/* <div className="font-boldonse text-white text-center mb-4">
+        Hey there! I&apos;m a freelancer and artist based in Seattle, WA. Check
+        out the various things I do:
+      </div> */}
       <div className="hidden lg:block">
         <section className="flex">
           <PhotoLinkPortrait

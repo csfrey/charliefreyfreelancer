@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { Link } from "react-router-dom";
 
 const Photography = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -62,8 +63,17 @@ const Photography = () => {
 
   return (
     <div>
-      <div className="font-boldonse text-3xl text-white text-center my-8">
+      <div className="font-boldonse text-5xl text-white text-center mt-8 mb-8">
         PHOTOGRAPHY
+      </div>
+      <div className="flex justify-center">
+        <div className="font-boldonse text-white mb-8 max-w-3xl leading-loose">
+          I take photos of a lot of things, but I love working with artists and
+          bands to bring fresh value to their brand. Want to work together?{" "}
+          <Link to="/contact" className="text-blue-300">
+            Drop me a message.
+          </Link>
+        </div>
       </div>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 ">
         {!photoQuery.isLoading &&

@@ -3,6 +3,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import Photography from "./pages/Photography";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/photography" element={<Photography />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </main>
   );
